@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>We are the Lions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <script src="https://kit.fontawesome.com/200cee3311.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main class="main-container">
+        <img class="logo display-block-center" src="./images/space_lion.png" alt="Crystal Gems Logo">
+        <h1>We are the Lions</h1>
+        <textarea class="content-input display-block-center" id="content-input" aria-label="Input endorsement content" cols="50" rows="4" placeholder="Write your endorsement here" autocomplete="off"></textarea>
+        <div class="display-flex">
+            <input type="text" class="person-input" id="sender-input" aria-label="Input sender" placeholder="From" autocomplete="off">
+            <input type="text" class="person-input" id="receiver-input" aria-label="Input receiver" placeholder="To" autocomplete="off">
+        </div>
+        <button type="button" class="publish-button display-block-center" id="publish-button" title="Publish your endorsement post" aria-label="Publish Button">Publish</button>
+        <h2>- Endorsements -</h2>
+        <div id="endorsements-posts">
+            <!-- <section class="post-box">
+                <p class="font-bold">To receiver</p>
+                <p>content</p>
+                <p class="font-bold">From sender</p>
+                <button class="likes-button" aria-label="Like this post" title="Like this post">
+                    <i class="fas fa-heart"></i>
+                    <span class="font-bold" id="likes-count">0</span>
+                </button>
+            </section> -->
+        </div>
+    </main>
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
