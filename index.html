@@ -14,23 +14,16 @@
     <main class="main-container">
         <img class="logo display-block-center" src="./images/space_lion.png" alt="Crystal Gems Logo">
         <h1>We are the Lions</h1>
-        <textarea class="content-input display-block-center" id="content-input" aria-label="Input endorsement content" cols="50" rows="4" placeholder="Write your endorsement here" autocomplete="off"></textarea>
-        <div class="display-flex">
-            <input type="text" class="person-input" id="sender-input" aria-label="Input sender" placeholder="From" autocomplete="off">
-            <input type="text" class="person-input" id="receiver-input" aria-label="Input receiver" placeholder="To" autocomplete="off">
-        </div>
-        <button type="button" class="publish-button display-block-center" id="publish-button" title="Publish your endorsement post" aria-label="Publish Button">Publish</button>
+        <form autocomplete="off" id="form-el">
+            <textarea required class="content-input display-block-center" id="content-input" aria-label="Input endorsement content" aria-required="true" placeholder="Write your endorsement here" ></textarea>
+            <div class="display-flex">
+                <input type="text" class="person-input" id="sender-input" aria-label="Input sender" placeholder="From" autocomplete="off">
+                <input type="text" class="person-input" id="receiver-input" aria-label="Input receiver" placeholder="To" autocomplete="off">
+            </div>
+            <button type="submit" class="publish-button display-block-center" title="Publish your endorsement post" aria-label="Publish Button">Publish</button>
+        </form>
         <h2>- Endorsements -</h2>
         <div id="endorsements-posts">
-            <!-- <section class="post-box">
-                <p class="font-bold">To receiver</p>
-                <p>content</p>
-                <p class="font-bold">From sender</p>
-                <button class="likes-button" aria-label="Like this post" title="Like this post">
-                    <i class="fas fa-heart"></i>
-                    <span class="font-bold" id="likes-count">0</span>
-                </button>
-            </section> -->
         </div>
     </main>
     <script src="index.js" type="module"></script>

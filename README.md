@@ -6,15 +6,15 @@ I build it from scratch and use all the tricks and great practice I learned so f
 I also learned from building:
 - updata firebase data
 - add icon from fontawesome
-- more DOM metthods, like `insertAdjacentElement`
+- form, input and textarea feature, like required attribute
+- more DOM methods, like `appendChild`, `insertAdjacentElement`
+- sanitize third-party content before sending to innerHTML to prevent XSS. Manually creating markup is safe, but sometimes it's a LOT of code.
 
 ## Feture
-- [x] Firebase Realtime Database
-- [x] Update in realtime 
-- [x] The "from" and the "to" fields
+- [x] Firebase Realtime Database, update in realtime 
+- [x] Optional "from" and the "to" fields
 - [x] The newest post on the top
 - [x] "likes" feature, one person can only like the same post once
-- [ ] desktop version, add more content block
 
 ### About "like" feature
 need info:
